@@ -18,13 +18,15 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{% static 'css/style_bw.css' %}">
   <link rel="stylesheet" href="{% static 'css/booking_confirmation.css' %}">
+  <link rel="stylesheet" href="{% static 'css/whatsapp.css' %}">
+  <link rel="stylesheet" href="{% static 'css/fb-styles.css' %}">
   <!-- International Telephone Input -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
 </head>
 <body class="bg-light">
 
   <!-- ===== NAVBAR ===== -->
-  <nav class="navbar navbar-expand-lg navbar-dark py-3 shadow-sm" style="background-color: #1C1C1C;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold text-uppercase" href="{% url 'cooli_hotel' %}">
         <img src="{% static 'images/logo.png' %}" alt="Ikad Hotel Logo" width="40" height="40" class="me-2">
@@ -100,14 +102,14 @@
       <!-- Embedded Google Map -->
       <div class="row mt-5">
         <div class="col-12">
-          <div class="ratio ratio 16x9">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.349621310725!2d3.4335721750378163!3d6.432870724421134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf523c32d4e93%3A0xd24d4aed0b4b33c6!2sIkad%20Hotel%20and%20Suite!5e0!3m2!1sen!2sng!4v1731183549210!5m2!1sen!2sng" 
-              width="100%" 
-              height="300" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.google.com/maps/place/COOLIO+HOTEL+%26+SUITES/@6.4946171,3.3763134,17z/data=!4m9!3m8!1s0x103b8d719658189b:0x9e6cc660582ce82e!5m2!4m1!1i2!8m2!3d6.4946171!4d3.3788883!16s%2Fg%2F11qsqw489n?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D&output=embed"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
@@ -132,5 +134,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <!-- Custom JS -->
   <script src="{% static 'js/booking.js' %}"></script>
+
+  <!-- ===== WhatsApp Chatbox ===== -->
+  <a href="https://wa.me/2348101143167?text=Hello%20Ikad%20Hotel%2C%20I%27d%20like%20to%20make%20a%20booking."
+    class="whatsapp_float"
+    target="_blank"
+    title="Chat with us on WhatsApp">
+      <img src="{% static 'images/whatsapp-icon.png' %}" alt="WhatsApp" width="60" height="60">
+  </a>
+  <div class="whatsapp_tooltip">Chat with us</div>
 </body>
 </html>

@@ -1,0 +1,118 @@
+:root {
+    --geodesic-appearance-border-control: 0px;
+    --geodesic-appearance-border-frame: 2px;
+    --geodesic-appearance-border-input: 1px;
+    --geodesic-appearance-border-media: 1px;
+    --geodesic-appearance-radius-addon: 4px;
+    --geodesic-appearance-radius-container: 8px;
+    --geodesic-appearance-radius-content: 6px;
+    --geodesic-appearance-radius-control: 6px;
+    --geodesic-appearance-radius-layer: 8px;
+    --geodesic-appearance-radius-rounded: 999px;
+    --fds-black: #000000;
+    --fds-black-alpha-05: rgba(0, 0, 0, 0.05);
+    --fds-black-alpha-10: rgba(0, 0, 0, 0.1);
+    --fds-black-alpha-15: rgba(0, 0, 0, 0.15);
+    --fds-black-alpha-20: rgba(0, 0, 0, 0.2);
+    --fds-black-alpha-30: rgba(0, 0, 0, 0.3);
+    --fds-black-alpha-40: rgba(0, 0, 0, 0.4);
+    --fds-black-alpha-50: rgba(0, 0, 0, 0.5);
+    --fds-black-alpha-60: rgba(0, 0, 0, 0.6);
+    --fds-black-alpha-80: rgba(0, 0, 0, 0.8);
+    --fds-blue-05: #ECF3FF;
+    --fds-blue-30: #AAC9FF;
+    --fds-blue-40: #77A7FF;
+    --fds-blue-60: #1877F2;
+    --fds-blue-70: #2851A3;
+    --fds-blue-80: #1D3C78;
+    --fds-button-text: #444950;
+    --fds-comment-background: #F2F3F5;
+    --fds-gray-00: #F5F6F7;
+    --fds-gray-05: #F2F3F5;
+    --fds-gray-10: #EBEDF0;
+    --fds-gray-20: #DADDE1;
+    --fds-gray-25: #CCD0D5;
+    --fds-gray-30: #BEC3C9;
+    --fds-gray-45: #8D949E;
+    --fds-gray-70: #606770;
+    --fds-gray-80: #444950;
+    --fds-gray-90: #303338;
+    --fds-gray-100: #1C1E21;
+}
+
+._4-u2 > ._4-u3:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+._4-u2 > ._4-u3:first-child {
+    border-top: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+._4-u2 > ._4-u3 {
+    border-top: 1px solid #e5e5e5;
+}
+
+._11st ._588p {
+    padding: 0;
+}
+
+._588p {
+    color: #4b4f56;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 32px;
+}
+
+._3u39 ._57mb, ._4in- ._57mb {
+    font-family: Graphik LCG Web, Graphik Arabic Web Regular, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, Lucida Grande, Sans-Serif;
+}
+
+._57mb {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Arial, Helvetica, sans-serif;
+    margin-bottom: 16px;
+}
+
+._55w7, ._55w7 td {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+._55w7 {
+    background-color: #f2f2f2;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+body, button, input, label, select, td, textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    background: #fff;
+    color: #1c1e21;
+    direction: ltr;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    unicode-bidi: embed;
+}
+
+/* Responsive Styles */
+@media (max-width: 1439px) {
+    :root {
+        --x1blunf5: var(--system-14-font-size);
+        --xkbnasn: var(--system-48-font-size);
+        --x190lbiv: var(--system-36-font-size);
+        --x1nxb92n: var(--system-32-font-size);
+        --x1cx3y4n: var(--system-24-font-size);
+        --x790amx: var(--system-20-font-size);
+        --xt39w4n: var(--system-16-font-size);
+        --x1rov1lr: var(--system-20-font-size);
+        --x1diw0t2: var(--system-16-font-size);
+        --x1t7w1xg: var(--system-14-font-size);
+    }
+}

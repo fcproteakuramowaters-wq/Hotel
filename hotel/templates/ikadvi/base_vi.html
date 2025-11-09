@@ -23,6 +23,8 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{% static 'css/style_vi.css' %}">
+  <link rel="stylesheet" href="{% static 'css/whatsapp.css' %}">
+  <link rel="stylesheet" href="{% static 'css/fb-styles.css' %}">
 
   <style>
     :root {
@@ -413,7 +415,7 @@
 <body class="bg-light">
 
   <!-- ===== NAVBAR ===== -->
-  <nav class="navbar navbar-expand-lg navbar-dark py-3 shadow-sm" style="background-color: #1C1C1C;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold text-uppercase" href="{% url 'ikad_victoria_island' %}">
         <img src="{% static 'images/logo.png' %}" alt="Ikad Hotel Logo" width="40" height="40" class="me-2">
@@ -525,5 +527,14 @@
   
   <!-- Custom JS -->
   <script src="{% static 'js/booking_enhanced.js' %}"></script>
+
+  <!-- ===== WhatsApp Chatbox ===== -->
+  <a href="https://wa.me/2348101143167?text=Hello%20Ikad%20Hotel%2C%20I%27d%20like%20to%20make%20a%20booking."
+    class="whatsapp_float"
+    target="_blank"
+    title="Chat with us on WhatsApp">
+      <img src="{% static 'images/whatsapp-icon.png' %}" alt="WhatsApp" width="60" height="60">
+  </a>
+  <div class="whatsapp_tooltip">Chat with us</div>
 </body>
 </html>
