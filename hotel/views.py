@@ -147,8 +147,14 @@ def cooli_hotel(request):
         context['booking_message'] = request.COOKIES['booking_message']
     return render(request, 'ikadbw/cooli.html', context)
 
-def contact(request):
-    return render(request, 'hotel/contact.html')
+def contact(request, hotel_type='vi'):
+    # Render the appropriate contact template based on hotel type
+    # 'vi' = Victoria Island (ikadvi), 'bw' = Coolio Hotel (ikadbw)
+    if hotel_type == 'bw':
+        template_name = 'ikadbw/contact.html'
+    else:
+        template_name = 'ikadvi/contact.html'
+    return render(request, template_name)
 
 def booking_confirmation(request, hotel_type):
     if request.method == 'POST':
