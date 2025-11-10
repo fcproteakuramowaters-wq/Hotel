@@ -20,10 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!g*!1rvqky*$s#z*&%x@j#_+@ns0-^@6bw1$z$kh#^llpj5wa0'
+SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-!g*!1rvqky*$s#z*&%x@j#_+@ns0-^@6bw1$z$kh#^llpj5wa0')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 
 ALLOWED_HOSTS = ['hotel-kw14.onrender.com', 'localhost', '127.0.0.1']
 
@@ -160,6 +160,17 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 WHITENOISE_USE_FINDERS = True
 WHITENOISE_MANIFEST_STRICT = False
 WHITENOISE_ALLOW_ALL_ORIGINS = True
+
+# Additional static files settings for production
+if not DEBUG:
+    # Enable WhiteNoise's GZip compression
+    WHITENOISE_COMPRESSION_ENABLED = True
+    
+    # Cache static files for 1 year
+    WHITENOISE_MAX_AGE = 31536000
+    
+    # Serve static files directly using WhiteNoise
+    WHITENOISE_STATIC_PREFIX = STATIC_URL
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
