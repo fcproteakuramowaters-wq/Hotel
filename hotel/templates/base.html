@@ -4,6 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ikad Hotel offers exceptional hospitality, premium facilities, and luxury stays in Victoria Island, Lagos. Book your room today!">
+    <meta name="keywords" content="hotel, Ikad Hotel, Victoria Island, Lagos, luxury, accommodation, Nigeria, suites, booking">
+    <link rel="canonical" href="https://hotel-kw14.onrender.com/">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Ikad Hotel - Victoria Island, Lagos">
+    <meta property="og:description" content="Experience comfort and class at Ikad Hotel. Premium hospitality in the heart of Victoria Island, Lagos.">
+    <meta property="og:image" content="https://hotel-kw14.onrender.com{% static 'images/logo.png' %}">
+    <meta property="og:url" content="https://hotel-kw14.onrender.com/">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ikad Hotel - Victoria Island, Lagos">
+    <meta name="twitter:description" content="Experience comfort and class at Ikad Hotel. Premium hospitality in the heart of Victoria Island, Lagos.">
+    <meta name="twitter:image" content="https://hotel-kw14.onrender.com{% static 'images/logo.png' %}">
     <title>{% block title %}Ikad Hotel{% endblock %}</title>
 
     <!-- Favicon -->
@@ -16,6 +30,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body class="{% block body_class %}{% endblock %}">
+    <a href="#main-content" class="visually-hidden-focusable skip-link">Skip to main content</a>
 
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
@@ -55,9 +70,11 @@
 
     <!-- ===== MAIN CONTENT ===== -->
     <main class="flex-shrink-0">
-        {% block content %}
-        <!-- Page-specific content will go here -->
-        {% endblock %}
+    <div id="main-content" tabindex="-1">
+    {% block content %}
+    <!-- Page-specific content will go here -->
+    {% endblock %}
+    </div>
     </main>
 
     <!-- ===== FOOTER ===== -->

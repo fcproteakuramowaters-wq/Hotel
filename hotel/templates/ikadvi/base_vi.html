@@ -4,6 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ikad Hotel & Suite - Victoria Island: Luxury stays, bespoke services, and exceptional experiences in Lagos. Book your room now!">
+  <meta name="keywords" content="hotel, Ikad Hotel, Victoria Island, Lagos, luxury, accommodation, Nigeria, suites, booking">
+  <link rel="canonical" href="https://hotel-kw14.onrender.com/victoria-island/">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Ikad Hotel & Suite - Victoria Island, Lagos">
+  <meta property="og:description" content="Luxury stays, bespoke services, and exceptional experiences in Lagos. Book your room now!">
+  <meta property="og:image" content="https://hotel-kw14.onrender.com{% static 'images/logo.png' %}">
+  <meta property="og:url" content="https://hotel-kw14.onrender.com/victoria-island/">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ikad Hotel & Suite - Victoria Island, Lagos">
+  <meta name="twitter:description" content="Luxury stays, bespoke services, and exceptional experiences in Lagos. Book your room now!">
+  <meta name="twitter:image" content="https://hotel-kw14.onrender.com{% static 'images/logo.png' %}">
   <title>{% block title %}Ikad Hotel & Suite - Victoria Island{% endblock %}</title>
 
   <!-- Favicon -->
@@ -413,6 +427,7 @@
   </style>
 </head>
 <body class="bg-light">
+  <a href="#main-content" class="visually-hidden-focusable skip-link">Skip to main content</a>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
@@ -444,9 +459,11 @@
 
   <!-- ===== PAGE CONTENT ===== -->
   <main>
-    {% block content %}
-    <!-- Page-specific content goes here -->
-    {% endblock %}
+  <div id="main-content" tabindex="-1">
+  {% block content %}
+  <!-- Page-specific content goes here -->
+  {% endblock %}
+  </div>
   </main>
 
   <!-- ===== FOOTER ===== -->

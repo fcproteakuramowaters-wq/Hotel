@@ -4,6 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ikad Hotel & Suite - Cooli: Modern comfort, elegant rooms, and premium amenities in Cooli, Lagos. Book your stay now!">
+  <meta name="keywords" content="hotel, Ikad Hotel, Cooli, Lagos, luxury, accommodation, Nigeria, suites, booking">
+  <link rel="canonical" href="https://hotel-kw14.onrender.com/cooli/">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Ikad Hotel & Suite - Cooli, Lagos">
+  <meta property="og:description" content="Modern comfort, elegant rooms, and premium amenities in Cooli, Lagos. Book your stay now!">
+  <meta property="og:image" content="https://hotel-kw14.onrender.com{% static 'images/logo.png' %}">
+  <meta property="og:url" content="https://hotel-kw14.onrender.com/cooli/">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ikad Hotel & Suite - Cooli, Lagos">
+  <meta name="twitter:description" content="Modern comfort, elegant rooms, and premium amenities in Cooli, Lagos. Book your stay now!">
+  <meta name="twitter:image" content="https://hotel-kw14.onrender.com{% static 'images/logo.png' %}">
   <title>{% block title %}Ikad Hotel & Suite - Cooli{% endblock %}</title>
 
   <!-- Favicon -->
@@ -24,6 +38,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
 </head>
 <body class="bg-light">
+  <a href="#main-content" class="visually-hidden-focusable skip-link">Skip to main content</a>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
@@ -55,9 +70,11 @@
 
   <!-- ===== PAGE CONTENT ===== -->
   <main>
-    {% block content %}
-    <!-- Page-specific content goes here -->
-    {% endblock %}
+  <div id="main-content" tabindex="-1">
+  {% block content %}
+  <!-- Page-specific content goes here -->
+  {% endblock %}
+  </div>
   </main>
 
   <!-- ===== FOOTER ===== -->
@@ -104,7 +121,7 @@
         <div class="col-12">
           <div class="ratio ratio-16x9">
             <iframe
-              src="https://www.google.com/maps/place/COOLIO+HOTEL+%26+SUITES/@6.4946171,3.3763134,17z/data=!4m9!3m8!1s0x103b8d719658189b:0x9e6cc660582ce82e!5m2!4m1!1i2!8m2!3d6.4946171!4d3.3788883!16s%2Fg%2F11qsqw489n?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D&output=embed"
+              src="https://www.google.com/maps/place/COOLIO+HOTEL+%26+SUITES/@6.4946171,3.3788883,17z/data=!4m20!1m10!3m9!1s0x103b8d719658189b:0x9e6cc660582ce82e!2sCOOLIO+HOTEL+%26+SUITES!5m2!4m1!1i2!8m2!3d6.4946171!4d3.3788883!16s%2Fg%2F11qsqw489n!3m8!1s0x103b8d719658189b:0x9e6cc660582ce82e!5m2!4m1!1i2!8m2!3d6.4946171!4d3.3788883!16s%2Fg%2F11qsqw489n?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D"
               width="100%"
               height="300"
               style="border:0;"
