@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!g*!1rvqky*$s#z*&%x@j#_+@ns0-^@6bw1$z$kh#^llpj5wa0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hotel-kw14.onrender.com', 'localhost', '127.0.0.1']
 
 # Logging Configuration
 LOGGING = {
@@ -55,7 +55,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 EMAIL_HOST_USER = 'fatukasikayode2013@gmail.com'
-EMAIL_HOST_PASSWORD = 'pvpgcrbjxibrppiy'
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = 'IKAD Hotel <fatukasikayode2013@gmail.com>'
 SERVER_EMAIL = 'fatukasikayode2013@gmail.com'
 EMAIL_TIMEOUT = 30
