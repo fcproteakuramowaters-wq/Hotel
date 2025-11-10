@@ -25,7 +25,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-!g*!1rvqky*$s#z*&%x@j#_+@n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 
-ALLOWED_HOSTS = ['hotel-kw14.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ["hotel-xx7h.onrender.com", "localhost", "127.0.0.1"]
 
 # Logging Configuration
 LOGGING = {
